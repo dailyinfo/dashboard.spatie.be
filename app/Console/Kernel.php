@@ -19,6 +19,7 @@ class Kernel extends ConsoleKernel
         \App\Console\Components\Npm\FetchTotals::class,
         \App\Console\Components\Music\FetchCurrentTrack::class,
         \App\Console\Components\Packagist\FetchTotals::class,
+        \App\Console\Components\DailyInfo\FetchAdStats::class,
         \App\Console\Components\Tasks\FetchTasks::class,
         \App\Console\Components\Twitter\ListenForMentions::class,
         \App\Console\Components\Twitter\ListenForQuotes::class,
@@ -31,9 +32,6 @@ class Kernel extends ConsoleKernel
         $schedule->command('dashboard:fetch-calendar-events')->everyMinute();
         $schedule->command('dashboard:fetch-current-track')->everyMinute();
         $schedule->command('dashboard:send-heartbeat')->everyMinute();
-        $schedule->command('dashboard:fetch-tasks')->everyFiveMinutes();
-        $schedule->command('dashboard:fetch-github-totals')->everyThirtyMinutes();
-        $schedule->command('dashboard:fetch-packagist-totals')->hourly();
-        $schedule->command('dashboard:fetch-npm-totals')->hourly();
+        $schedule->command('dashboard:fetch-ad-stats')->everyFiveMinutes();
     }
 }

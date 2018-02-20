@@ -6,19 +6,16 @@
 
 <dashboard id="dashboard" columns="6" rows="3">
     <twitter :initial-tweets="{{ json_encode($initialTweets) }}" position="a1:a3"></twitter>
-    <uptime position="a1:a3"></uptime>
-    <packagist position="b1"></packagist>
-    <npm position="b2"></npm>
-    <github position="b3"></github>
     <music position="c1:d1"></music>
-    <tasks team-member="alex" position="c2"></tasks>
-    <tasks team-member="brent" position="d2"></tasks>
-    <tasks team-member="freek" position="e2"></tasks>
-    <tasks team-member="harish" position="c3"></tasks>
-    <tasks team-member="seb" position="d3"></tasks>
-    <tasks team-member="willem" position="e3"></tasks>
-    <time-weather position="e1" date-format="ddd DD/MM" time-zone="Asia/Kolkata" weather-city="Mira-Bhayandar"></time-weather>
-    <time-weather position="f1" date-format="ddd DD/MM" time-zone="Europe/Brussels" weather-city="Antwerp"></time-weather>
+    <ad-stats position="f1"></ad-stats>
+    <tasks team-member="dan" position="b2"></tasks>
+    <tasks team-member="bloke" position="c2"></tasks>
+    <tasks team-member="jen" position="d2"></tasks>
+    <tasks team-member="katy" position="e2"></tasks>
+    <tasks team-member="katy" position="b3"></tasks>
+    <tasks team-member="russ" position="c3"></tasks>
+    <tasks team-member="alice" position="d3"></tasks>
+    <time-weather position="e3" date-format="ddd DD/MM" time-zone="Europe/London" weather-city="Oxford, UK"></time-weather>
     <calendar position="f2:f3"></calendar>
     <internet-connection></internet-connection>
 </dashboard>

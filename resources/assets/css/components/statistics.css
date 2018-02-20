@@ -10,10 +10,6 @@
     font-size: var(--font-size-xs);
 }
 
-.statistic__stars {
-    background-image: url('/images/svg/star.svg');
-}
-
 .statistic__count {
     color: var(--yellow);
     vertical-align: top;

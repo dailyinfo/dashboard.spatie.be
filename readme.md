@@ -2,6 +2,12 @@
 
 This repo contains the source code of our dashboard.
 
+## Us
+
+`yarn run watch`
+`php artisan queue:listen`
+`php artisan dashboard:update`
+
 ## Example
 
 <img style="max-width:100%; height: auto" src="http://spatie.github.io/dashboard.spatie.be/images/screenshot20170620.jpg">

@@ -17,4 +17,8 @@ return [
     'packagist' => [
         'vendor' => env('PACKAGIST_VENDOR'),
     ],
+
+    'dailyinfo' => [
+        'secret' => env('DAILYINFO_API_SECRET'),
+    ],
 ];
