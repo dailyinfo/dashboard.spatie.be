@@ -4,7 +4,7 @@ namespace App\Events\DailyInfo;
 
 use App\Events\DashboardEvent;
 
-class AdStatsFetched extends DashboardEvent
+class StatsFetched extends DashboardEvent
 {
     /** @var int */
     public $newAds;

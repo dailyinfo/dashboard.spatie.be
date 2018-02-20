@@ -4,7 +4,7 @@ import Echo from 'laravel-echo';
 import Vue from 'vue';
 
 import Dashboard from './components/Dashboard';
-import AdStats from './components/AdStats';
+import Stats from './components/Stats';
 import Calendar from './components/Calendar';
 import Github from './components/Github';
 import InternetConnection from './components/InternetConnection';
@@ -22,7 +22,7 @@ new Vue({
 
     components: {
         Dashboard,
-        AdStats,
+        Stats,
         Calendar,
         Github,
         InternetConnection,

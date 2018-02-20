@@ -2,10 +2,10 @@
 
 namespace App\Console\Components\DailyInfo;
 
-use App\Events\DailyInfo\AdStatsFetched;
+use App\Events\DailyInfo\StatsFetched;
 use Illuminate\Console\Command;
 
-class FetchAdStats extends Command
+class FetchStats extends Command
 {
     protected $signature = 'dashboard:fetch-ad-stats';
 
@@ -19,6 +19,6 @@ class FetchAdStats extends Command
 
         $totals = json_decode($adStatsJson, true);
 
-        event(new AdStatsFetched($totals));
+        event(new StatsFetched($totals));
     }
 }

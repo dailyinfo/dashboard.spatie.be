@@ -43,7 +43,7 @@ export default {
 
         getEventHandlers() {
             return {
-                'DailyInfo.AdStatsFetched': response => {
+                'DailyInfo.StatsFetched': response => {
                     this.newAds = response.newAds;
                     this.filteredAds = response.filteredAds;
                 },

@@ -20,7 +20,7 @@ class Kernel extends ConsoleKernel
         \App\Console\Components\Npm\FetchTotals::class,
         \App\Console\Components\Music\FetchCurrentTrack::class,
         \App\Console\Components\Packagist\FetchTotals::class,
-        \App\Console\Components\DailyInfo\FetchAdStats::class,
+        \App\Console\Components\DailyInfo\FetchStats::class,
         \App\Console\Components\Tasks\FetchTasks::class,
         \App\Console\Components\Twitter\ListenForMentions::class,
         \App\Console\Components\Twitter\ListenForQuotes::class,
