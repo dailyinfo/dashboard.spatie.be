@@ -2,6 +2,7 @@
 
 namespace App\Console;
 
+use App\Console\Components\Trello\FetchTodo;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
@@ -25,6 +26,7 @@ class Kernel extends ConsoleKernel
         \App\Console\Components\Twitter\ListenForQuotes::class,
         \App\Console\Components\Twitter\SendFakeTweet::class,
         UpdateDashboard::class,
+        FetchTodo::class,
     ];
 
     protected function schedule(Schedule $schedule)

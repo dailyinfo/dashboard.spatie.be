@@ -13,6 +13,7 @@ import Npm from './components/Npm';
 import Packagist from './components/Packagist';
 import Tasks from './components/Tasks';
 import TimeWeather from './components/TimeWeather';
+import Todos from './components/Todos';
 import Twitter from './components/Twitter';
 import Uptime from './components/Uptime';
 
@@ -30,6 +31,7 @@ new Vue({
         Packagist,
         Tasks,
         TimeWeather,
+        Todos,
         Twitter,
         Uptime,
     },

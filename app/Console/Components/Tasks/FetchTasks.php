@@ -3,7 +3,7 @@
 namespace App\Console\Components\Tasks;
 
 use Illuminate\Console\Command;
-use App\Events\Tasks\TasksFetched;
+use App\Events\Tasks\TodosFetched;
 use App\Services\GitHub\GitHubApi;
 
 class FetchTasks extends Command
@@ -29,6 +29,6 @@ class FetchTasks extends Command
             })
             ->toArray();
 
-        event(new TasksFetched($contentOfFiles));
+        event(new TodosFetched($contentOfFiles));
     }
 }

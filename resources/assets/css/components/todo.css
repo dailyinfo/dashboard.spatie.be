@@ -1,0 +1,9 @@
+.todo__title {
+    color: var(--blue-light);
+    text-transform: uppercase;
+    font-size: var(--font-size-m);
+}
+
+.todo__content {
+    font-size: var(--font-size-xxs);
+}

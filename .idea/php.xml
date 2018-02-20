@@ -117,6 +117,9 @@
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/gregoriohc/laravel-trello" />
+      <path value="$PROJECT_DIR$/vendor/cdaguerre/php-trello-api" />
+      <path value="$PROJECT_DIR$/vendor/guzzle/guzzle" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />

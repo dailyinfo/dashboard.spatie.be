@@ -21,4 +21,8 @@ return [
     'dailyinfo' => [
         'secret' => env('DAILYINFO_API_SECRET'),
     ],
+    'trello' => [
+        'api_key' => env('TRELLO_API_KEY'),
+        'todos_board_id' => env('TRELLO_TODOS_BOARD_ID'),
+    ],
 ];

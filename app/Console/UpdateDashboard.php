@@ -16,6 +16,6 @@ class UpdateDashboard extends Command
         $this->call('dashboard:send-heartbeat');
         $this->call("dashboard:fetch-ad-stats");
         $this->call('dashboard:fetch-current-track');
-//        $this->call('dashboard:fetch-tasks');
+        $this->call('dashboard:fetch-todos');
     }
 }

@@ -173,6 +173,7 @@ return [
         App\Providers\CollectionServiceProvider::class,
         Spatie\LaravelTwitterStreamingApi\TwitterStreamingApiServiceProvider::class,
         App\Services\GitHub\GitHubServiceProvider::class,
+        Gregoriohc\LaravelTrello\TrelloServiceProvider::class,
     ],
 
     /*
@@ -220,6 +221,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Trello' => Gregoriohc\LaravelTrello\Facades\Wrapper::class,
         'TwitterStreamingApi' => Spatie\LaravelTwitterStreamingApi\TwitterStreamingApiFacade::class,
     ],
 
