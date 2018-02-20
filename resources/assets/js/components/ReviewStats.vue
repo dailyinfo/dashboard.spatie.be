@@ -1,15 +1,19 @@
 <template>
     <tile :position="position" modifiers="overflow">
         <section class="statistics">
-            <h1>Ads</h1>
+            <h1>Reviews</h1>
             <ul>
                 <li class="statistic">
                     <span class="statistic__label">New</span>
-                    <span class="statistic__count">{{ formatNumber(newAds) }}</span>
+                    <span class="statistic__count">{{ formatNumber(newReviews) }}</span>
                 </li>
                 <li class="statistic">
-                    <span class="statistic__label">Filtered</span>
-                    <span class="statistic__count">{{ formatNumber(filteredAds) }}</span>
+                    <span class="statistic__label">Last 7 Days</span>
+                    <span class="statistic__count">{{ formatNumber(reviewsPastWeekCount) }}</span>
+                </li>
+                <li class="statistic">
+                    <span class="statistic__label">Last 30 Days</span>
+                    <span class="statistic__count">{{ formatNumber(reviewsPast30DaysCount) }}</span>
                 </li>
             </ul>
         </section>
@@ -33,8 +37,9 @@ export default {
 
     data() {
         return {
-            newAds: 0,
-            filteredAds: 0
+            newReviews: 0,
+            reviewsPastWeekCount: 0,
+            reviewsPast30DaysCount: 0
         };
     },
 
@@ -44,15 +49,16 @@ export default {
         getEventHandlers() {
             return {
                 'DailyInfo.StatsFetched': response => {
-                    this.newAds = response.newAds;
-                    this.filteredAds = response.filteredAds;
+                    this.newReviews = response.newReviews;
+                    this.reviewsPastWeekCount = response.reviewsPastWeekCount;
+                    this.reviewsPast30DaysCount = response.reviewsPast30DaysCount;
                 },
             };
         },
 
         getSaveStateConfig() {
             return {
-                cacheKey: 'ad-stats',
+                cacheKey: 'review-stats',
             };
         },
     },

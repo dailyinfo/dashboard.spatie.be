@@ -10,7 +10,19 @@ class StatsFetched extends DashboardEvent
     public $newAds;
 
     /** @var int */
+    public $newHeldAds;
+
+    /** @var int */
     public $filteredAds;
+
+    /** @var int */
+    public $newReviews;
+
+    /** @var int */
+    public $reviewsPastWeekCount;
+
+    /** @var int */
+    public $reviewsPast30DaysCount;
 
     public function __construct(array $totals)
     {
