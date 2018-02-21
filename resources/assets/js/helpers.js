@@ -22,6 +22,12 @@ export function formatDuration(start) {
     return moment.duration(moment().diff(start), 'milliseconds').format('d[d] h[h] m[m]');
 }
 
+export function formattedDate(value, format) {
+    const date = moment(value);
+
+    return date.format(format);
+}
+
 export function relativeDate(value) {
     const date = moment(value);
 

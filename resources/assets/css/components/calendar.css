@@ -13,3 +13,8 @@
 .calendar__event__date {
     color: var(--red-light);
 }
+
+.calendar__event__date-small {
+    color: var(--gray-light);
+    font-size: var(--font-size-xxs);
+}
