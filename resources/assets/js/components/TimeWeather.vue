@@ -77,7 +77,7 @@ export default {
 
         async fetchWeather() {
             const conditions = await weather.conditions(this.weatherCity);
-
+            console.log(conditions);
             this.weather.temperature = conditions.temp;
             this.weather.iconClass = `wi-yahoo-${conditions.code}`;
         },
