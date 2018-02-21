@@ -6,6 +6,7 @@ import Vue from 'vue';
 import Dashboard from './components/Dashboard';
 import AdStats from './components/AdStats';
 import ReviewStats from './components/ReviewStats';
+import DeliveryStats from './components/DeliveryStats';
 import Calendar from './components/Calendar';
 import Github from './components/Github';
 import InternetConnection from './components/InternetConnection';
@@ -25,6 +26,7 @@ new Vue({
         Dashboard,
         AdStats,
         ReviewStats,
+        DeliveryStats,
         Calendar,
         Github,
         InternetConnection,

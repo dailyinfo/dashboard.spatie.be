@@ -24,6 +24,9 @@ class StatsFetched extends DashboardEvent
     /** @var int */
     public $reviewsPast30DaysCount;
 
+    /** @var int */
+    public $outstandingDeliveriesCount;
+
     public function __construct(array $totals)
     {
         foreach ($totals as $sumName => $total) {
