@@ -24,5 +24,6 @@ return [
     'trello' => [
         'api_key' => env('TRELLO_API_KEY'),
         'todos_board_id' => env('TRELLO_TODOS_BOARD_ID'),
+        'todos_lists' => explode(',', env('TRELLO_TODOS_LISTS')),
     ],
 ];

@@ -1,7 +1,7 @@
 <template>
     <tile :position="position" modifiers="overflow">
         <section class="todo">
-            <h1 class="todo__title">{{ teamMember }}</h1>
+            <h1 class="todo__title">{{ typeof(heading) !== "undefined" ? heading : teamMember }}</h1>
             <ul>
                 <li v-for="todo in todos" class="todo__content">
                     {{ todo }}
@@ -23,7 +23,7 @@ export default {
 
     mixins: [echo, saveState],
 
-    props: ['teamMember', 'position'],
+    props: ['heading', 'teamMember', 'position'],
 
     data() {
         return {

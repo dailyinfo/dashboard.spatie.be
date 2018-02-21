@@ -22,11 +22,15 @@ class FetchTodo extends Command
 
         /** @var Board $board */
         $board = $t->getBoard(config('services.trello.todos_board_id'));
+        $lists = config('services.trello.todos_lists');
 
         $data = [];
 
         /** @var Cardlist $list */
         foreach($board->getLists() as $list) {
+            if (!in_array($list->getName(), $lists)) {
+                continue;
+            }
             $data[$list->getName()] = [];
             /** @var Card $card */
             foreach($list->getCards() as $card) {

@@ -9,13 +9,8 @@
     <music position="b1:d1"></music>
     <review-stats position="e1"></review-stats>
     <ad-stats position="f1"></ad-stats>
-    <todos team-member="Dan" position="b2"></todos>
-    <todos team-member="Bloke" position="c2"></todos>
-    <todos team-member="Jen" position="d2"></todos>
-    <todos team-member="Katy" position="e2"></todos>
-    <todos team-member="Susie" position="b3"></todos>
-    <todos team-member="Russ" position="c3"></todos>
-    <todos team-member="Alice" position="d3"></todos>
+    <todos heading="Dan" team-member="In Progress - Dan" position="b2"></todos>
+    <todos heading="Bloke" team-member="In Progress - Bloke" position="c2"></todos>
     <time-weather position="e3" date-format="ddd DD/MM" time-zone="Europe/London" weather-city="Oxford, UK"></time-weather>
     <calendar position="f2:f3"></calendar>
     <internet-connection></internet-connection>
