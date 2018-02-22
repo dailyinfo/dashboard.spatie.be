@@ -32,7 +32,7 @@ return [
     'channels' => [
         'stack' => [
             'driver' => 'stack',
-            'channels' => ['syslog'],
+            'channels' => ['errorlog'],
         ],
 
         'single' => [
