@@ -4,9 +4,15 @@ This repo contains the source code of our dashboard.
 
 ## Us
 
-`yarn run watch`
+`yarn run watch`    
 `php artisan queue:listen`
 `php artisan dashboard:update`
+
+Dokku:
+
+- Requires a MariaDB linked container
+- Set up all env vars from .env as config:set env variables
+- set up a Dokku volume for the `google-calendar` dir of storage/app, containing the credentials
 
 ## Example
 
