@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dokku": {
-      "predeploy": "php artisan migrate --seed && npm run production",
+      "predeploy": "php artisan migrate --seed && yarn run production",
       "postdeploy": "php artisan dashboard:update"
     }
   }
