@@ -13,6 +13,8 @@ Dokku:
 - Requires a MariaDB linked container
 - Set up all env vars from .env as config:set env variables
 - set up a Dokku volume for the `google-calendar` dir of storage/app, containing the credentials
+- cron job under dokku user for `dokku --rm-container run dashboard php artisan dashboard:update` every minute
+- `dokku ps:scale worker=1 twitter=1`
 
 ## Example
 
