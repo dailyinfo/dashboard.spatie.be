@@ -2,6 +2,7 @@
 
 namespace App\Console;
 
+use App\Console\Components\Analytics\FetchRealTimeAnalytics;
 use App\Console\Components\Trello\FetchTodo;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
@@ -14,6 +15,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
+        FetchRealTimeAnalytics::class,
         \App\Console\Components\Calendar\FetchCalendarEvents::class,
         \App\Console\Components\GitHub\FetchTotals::class,
         \App\Console\Components\InternetConnection\SendHeartbeat::class,
@@ -32,6 +34,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         $schedule->command('dashboard:fetch-calendar-events')->everyMinute();
+        $schedule->command('dashboard:fetch-real-time-analytics')->everyMinute();
         $schedule->command('dashboard:fetch-current-track')->everyMinute();
         $schedule->command('dashboard:send-heartbeat')->everyMinute();
         $schedule->command('dashboard:fetch-ad-stats')->everyFiveMinutes();

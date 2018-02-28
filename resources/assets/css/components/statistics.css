@@ -16,3 +16,8 @@
     white-space: nowrap;
     font-weight: var(--font-weight-black);
 }
+.statistic__single-large-count {
+    text-align: center;
+    color: var(--yellow);
+    font-size: var(--font-size-xxl);
+}

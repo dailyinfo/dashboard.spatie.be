@@ -12,6 +12,7 @@ class UpdateDashboard extends Command
 
     public function handle()
     {
+        $this->call('dashboard:fetch-real-time-analytics');
         $this->call('dashboard:fetch-calendar-events');
         $this->call('dashboard:send-heartbeat');
         $this->call("dashboard:fetch-stats");
