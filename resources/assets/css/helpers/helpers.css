@@ -26,3 +26,15 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
+.text-small {
+    font-size: var(--font-size-s)
+}
+
+dl.inline-list dt, dl.inline-list dd {
+    display: inline-block;
+}
+
+dl.inline-list dd {
+    color: var(--yellow)
+}

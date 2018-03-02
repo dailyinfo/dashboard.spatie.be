@@ -14,10 +14,20 @@ class FetchRealTimeAnalytics extends Command
     public function handle()
     {
         $analytics = \Google::make("analytics");
-        $results = $analytics->data_realtime->get("ga:4391653", "rt:activeUsers");
+        $results = $analytics->data_realtime->get("ga:4391653", "rt:activeUsers", [
+            "dimensions" => "rt:deviceCategory",
+        ]);
+
+        $byDevice = array_combine(
+            array_map(function($el) { return strtolower($el[0]); }, $results["rows"]),
+            array_map(function($el) { return (int)$el[1]; }, $results["rows"])
+        );
+
         $data = [
             "activeUsers" => (int)$results["totalsForAllResults"]["rt:activeUsers"],
+            "activeUsersByDevice" => $byDevice,
         ];
+
         event(new RealTimeAnalyticsFetched($data));
     }
 }

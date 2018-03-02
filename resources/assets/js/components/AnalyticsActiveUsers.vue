@@ -27,6 +27,11 @@ export default {
     data() {
         return {
             activeUsers: 0,
+            activeUsersByDevice: {
+                desktop: 0,
+                tablet: 0,
+                mobile: 0
+            }
         };
     },
 
@@ -37,6 +42,7 @@ export default {
             return {
                 'Analytics.RealTimeAnalyticsFetched': response => {
                     this.activeUsers = response.activeUsers;
+                    this.activeUsersByDevice = Object.assign(this.activeUsersByDevice, response.activeUsersByDevice);
                 },
             };
         },
